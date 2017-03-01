@@ -251,9 +251,38 @@
     <Compile Include="Migrations\201703011108312_CustomerBirthDateUpdate.Designer.cs">
       <DependentUpon>201703011108312_CustomerBirthDateUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703011142492_CreateGanre.cs" />
+    <Compile Include="Migrations\201703011142492_CreateGanre.Designer.cs">
+      <DependentUpon>201703011142492_CreateGanre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703011143510_Delete-Ganre.cs" />
+    <Compile Include="Migrations\201703011143510_Delete-Ganre.Designer.cs">
+      <DependentUpon>201703011143510_Delete-Ganre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703011149198_MovieandGenre.cs" />
+    <Compile Include="Migrations\201703011149198_MovieandGenre.Designer.cs">
+      <DependentUpon>201703011149198_MovieandGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703011150564_GenreContent.cs" />
+    <Compile Include="Migrations\201703011150564_GenreContent.Designer.cs">
+      <DependentUpon>201703011150564_GenreContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703011154319_MovieContent.cs" />
+    <Compile Include="Migrations\201703011154319_MovieContent.Designer.cs">
+      <DependentUpon>201703011154319_MovieContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703011202320_MovieContent1.cs" />
+    <Compile Include="Migrations\201703011202320_MovieContent1.Designer.cs">
+      <DependentUpon>201703011202320_MovieContent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703011204145_MovieContent2.cs" />
+    <Compile Include="Migrations\201703011204145_MovieContent2.Designer.cs">
+      <DependentUpon>201703011204145_MovieContent2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -325,6 +354,7 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -373,6 +403,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703011108312_CustomerBirthDateUpdate.resx">
       <DependentUpon>201703011108312_CustomerBirthDateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703011142492_CreateGanre.resx">
+      <DependentUpon>201703011142492_CreateGanre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703011143510_Delete-Ganre.resx">
+      <DependentUpon>201703011143510_Delete-Ganre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703011149198_MovieandGenre.resx">
+      <DependentUpon>201703011149198_MovieandGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703011150564_GenreContent.resx">
+      <DependentUpon>201703011150564_GenreContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703011154319_MovieContent.resx">
+      <DependentUpon>201703011154319_MovieContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703011202320_MovieContent1.resx">
+      <DependentUpon>201703011202320_MovieContent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703011204145_MovieContent2.resx">
+      <DependentUpon>201703011204145_MovieContent2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
