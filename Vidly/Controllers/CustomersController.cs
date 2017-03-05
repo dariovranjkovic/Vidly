@@ -27,6 +27,7 @@ namespace Vidly.Controllers
             var membershipTypes = _context.MembershipTypes.ToList();
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
 
@@ -48,19 +49,17 @@ namespace Vidly.Controllers
                 return View("CustomerForm", viewModel);
             }
 
-
             if (customer.Id == 0)
                 _context.Customers.Add(customer);
-
             else
             {
-                var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == customer.Id);
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
                 customerInDb.Name = customer.Name;
                 customerInDb.Birthdate = customer.Birthdate;
                 customerInDb.MembershipTypeId = customer.MembershipTypeId;
                 customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
-
             }
+
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Customers");
