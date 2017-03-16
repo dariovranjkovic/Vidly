@@ -1,8 +1,8 @@
 # Vidly
 CRUD application
 MVC Fundamentals
-⋅⋅* Working with Data
-⋅⋅* Forms
+1. Working with Data
+..* Forms
 ⋅⋅* Validation
 ⋅⋅* RESTful Services
 ⋅⋅* Client-side Development
