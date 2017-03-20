@@ -42,7 +42,7 @@
     <script>
         $(document).ready(function() {
 
-            $("#customers").DataTable({
+           var table = $("#customers").DataTable({
                 ajax: {
                     url: "/api/customers",
                     dataSrc: ""
@@ -74,7 +74,8 @@
                         $.ajax({
                             url: "/api/customers/" + button.attr("data-customer-id"),
                             method: "DELETE",
-                            success: function() {
+                            success: function () {
+                                table.row(button.parents("tr")).remove().draw();
                                 button.parents("tr").remove();
                             }
                         });
